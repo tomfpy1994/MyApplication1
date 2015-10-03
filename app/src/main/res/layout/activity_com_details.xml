@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffffff"
+    tools:context="com.example.bunnyfung.mobileassignment.ComDetails">
+
+    <TextView android:text="Numbet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMsg1"
+        android:textColor="#ff000000"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMsg2"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg1"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="Telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMsg3"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg2"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMsg4"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg3"
+        android:layout_toStartOf="@+id/tvComName"
+        android:paddingBottom="5px" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvComAddr" />
+
+    <TextView
+        android:text="2001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvComNo"
+        android:layout_alignBottom="@+id/tvMsg1"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="Royal Pacific Hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvComName"
+        android:layout_alignBottom="@+id/tvMsg2"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="27368818"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvComTel"
+        android:layout_alignBottom="@+id/tvMsg3"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="5px" />
+
+    <TextView
+        android:text="One Exchange Square, Central Distric"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvComAddr"
+        android:layout_below="@+id/tvMsg4"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="5px" />
+
+</RelativeLayout>

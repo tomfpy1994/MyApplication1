@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2001"
+        android:id="@+id/tvComNo"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        android:paddingLeft="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Royal Pacific Hotel"
+        android:id="@+id/tvComName"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvComNo"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tel"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/tvComNo"
+        android:layout_alignStart="@+id/tvComNo"
+        android:paddingLeft="20px"
+        android:paddingTop="5px"
+        android:textColor="#ff1a7cff"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="2736 8818"
+        android:id="@+id/tvComTel"
+        android:paddingLeft="20px"
+        android:textColor="#ff000000"
+        android:longClickable="true"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address"
+        android:id="@+id/textView7"
+        android:paddingLeft="20px"
+        android:paddingTop="5px"
+        android:textColor="#ff1a7cff"
+        android:layout_below="@+id/tvComTel"
+        android:layout_alignStart="@+id/tvComTel" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Royal Pacific Hotel &amp; Towers, China Hong Kong City, 33 Canton Road, Tsim Sha Tsui"
+        android:id="@+id/tvComAddr"
+        android:paddingLeft="20px"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_toStartOf="@+id/ivMap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="_____________________________________________________"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/tvComAddr"
+        android:layout_alignStart="@+id/tvComAddr"
+        android:textColor="#00ffffff"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:id="@+id/ivPhone"
+        android:layout_above="@+id/textView7"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:background="@drawable/phone" />
+
+    <ImageView
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:id="@+id/ivMap"
+        android:src="@drawable/location"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/tvComAddr"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/location"
+        android:clickable="true" />
+
+
+</RelativeLayout>

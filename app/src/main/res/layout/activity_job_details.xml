@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffffff"
+    tools:context="com.example.bunnyfung.mobileassignment.JobDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Number"
+        android:id="@+id/tvMsg1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="501"
+        android:id="@+id/tvJobNo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Date"
+        android:id="@+id/tvMsg2"
+        android:layout_below="@+id/tvMsg1"
+        android:layout_alignParentStart="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/5/2015"
+        android:id="@+id/tvRequestDate"
+        android:layout_below="@+id/tvMsg1"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Visit Date"
+        android:id="@+id/tvMsg3"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg2"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="28/5/2015"
+        android:id="@+id/tvVisitDate"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvMsg2"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status"
+        android:id="@+id/tvMsg4"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg3"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="completed"
+        android:id="@+id/tvJobStatus"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvVisitDate"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Time"
+        android:id="@+id/tvMsg5"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg4"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="10:05"
+        android:id="@+id/tvJobStartTime"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvJobStatus"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Time"
+        android:id="@+id/tvMsg6"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg5"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="10:05"
+        android:id="@+id/tvJobEndTime"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvJobStartTime"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Serial Number"
+        android:id="@+id/tvMsg7"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg6"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="3473878329"
+        android:id="@+id/tvSerialNo"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvJobEndTime"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Problem"
+        android:id="@+id/tvMsg8"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvMsg7"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8px" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Toner is not securely fused on the printout"
+        android:id="@+id/tvJobProblem"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvMsg8"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Remark"
+        android:id="@+id/tvMsg9"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/tvJobProblem"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8px"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Toner is not securely fused on the printout"
+        android:id="@+id/tvRemark"
+        android:singleLine="false"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/tvMsg9"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="8px"
+        android:textColor="#d1979797" />
+</RelativeLayout>
